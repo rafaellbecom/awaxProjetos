@@ -1,0 +1,895 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/*--> Config gerais <--*/
+.container{
+    max-width: 1140px;
+    width: 100vw;
+    margin: auto;
+}
+
+.marrom{
+    color: #B98B59;
+}
+
+h2{
+    text-align: center;
+    font-size: 3.0rem;
+    line-height: 2.5rem;
+}
+
+h3{
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.08rem;
+    color: #AFAFAF;
+    margin-top: 15px;
+}
+
+h4{
+    text-align: center;
+    font-size: 2.0rem;
+    line-height: 2.5rem;
+    color: white;
+}
+
+h5{
+    font-size: 2.0rem;
+    margin-top: 20px;
+}
+
+h6{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 1.3rem;
+    line-height: 2.8rem;
+}
+
+button.botao{
+    font-size: 1.3rem;
+    line-height: 1.08rem;
+    padding: 17px 60px;
+    border: none;
+    border-radius: 25px;
+    background-color: #B98B59;
+    color: #fff;
+    font-weight: 700;
+}
+
+button.botao:hover{
+    background-color: rgb(138, 138, 138);
+    cursor: pointer;
+}
+
+.padding-section{
+    padding: 60px 0px;
+}
+
+#border-left{
+    border-left: 1px solid #afafaf71;
+}
+
+/*--> Config header <--*/
+header{
+    background-color: #000;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container #logo{
+    font-size: 1.4rem;
+    color: #B98B59;
+}
+
+.menu-burguer{
+    background-color: #B98B59;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+
+.linha{
+    margin: 3px;
+    width: 30px;
+    height: 5px;
+    background-color: white;
+}
+
+header .container nav{
+    font-size: 1.3rem;
+}
+
+header .container nav a{
+    margin: 0px 7px;
+    color: rgb(140, 140, 140);
+    text-decoration: none;
+    padding-bottom: 38px;
+}
+
+header .container nav a:hover{
+    color: #fff;
+    border-bottom: 4px solid #B98B59;
+}
+
+header .container nav a#atual{
+    font-weight: 700;
+    color: #fff;
+    border-bottom: 4px solid #B98B59;
+}
+
+/*--> Config banner <--*/
+main #banner{
+    height: calc(100vh - 100px);
+    background-image: url('imagens/bg.jpg');
+    background-color: rgb(140, 140, 140);
+    background-position: center;
+}
+
+main #banner #opacidade{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.662);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #banner #opacidade #slide{
+    text-align: center;
+    color: #fff;
+}
+
+main #banner #opacidade #slide h1{
+    font-size: 8.0rem;
+    line-height: 7.5rem;
+}
+
+main #banner #opacidade #slide button.botao{
+    margin-top: 60px;
+}
+
+#banner h2{
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav .circle{
+    height: 12px;
+    width: 12px;
+    border-radius: 15px;
+    border: 2px solid #B98B59;
+    margin-left: 10px;
+    margin-top: 70px;
+    margin-bottom: -70px;
+}
+
+.nav .circle:hover{
+    background-color: #B98B59;
+    cursor: pointer;
+}
+
+.nav .circle#atual{
+    background-color: #B98B59;
+}
+
+/* --> Config About us <-- */
+main #about{
+    background-color: #F7F7F7;
+}
+
+main #about .container #conteudo{
+    display: flex;
+    margin-top: 50px;
+}
+
+main #about .container #conteudo #texto{
+    flex: 1.4;
+    margin-right: 50px;
+}
+
+main #about .container #conteudo #texto button.botao{
+    margin-top: 30px;
+}
+
+main #about .container #conteudo #video{
+    flex: 0.6;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.525);
+}
+
+/*--> Config services <--*/
+main #services{
+    background-color: #000;
+}
+
+main #services h2{
+    color: white;
+}
+
+main #services .container #cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+main #services .container #cards .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #afafaf71;
+    padding: 20px;
+}
+
+main #services .container #cards .card h4{
+    margin-top: 30px;
+}
+
+main #services .container #cards .card p{
+    color: #afafaf7c;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.0rem;
+}
+
+/*--> Config projects <--*/
+main #projects{
+    background-color: #F7F7F7;
+}
+
+main #projects .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--> Config nav-projects <--*/
+
+main #projects .container #nav{
+    padding: 20px;
+    border: 1px solid #afafaf71;
+    border-radius: 35px;
+    background-color: #f7f7f7;
+    margin-top: 30px;
+}
+
+main #projects .container #nav a{
+    font-size: 1.3rem;
+    padding: 17px;
+    border-right: 1px solid #afafaf71;
+    color: #AFAFAF;
+    text-decoration: none;
+}
+
+main #projects .container #nav a:hover{
+    text-decoration: underline;
+    color: #000;
+    border-bottom: 3px solid #B98B59;
+}
+
+main #projects .container #nav a#atual{
+    font-weight: 600;
+    color: #000;
+    border-bottom: 3px solid #B98B59;
+}
+
+/*-> Config photos <-*/
+
+main #projects .container #photos{
+    max-width: 100vw;
+    width: 1140px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+main #projects .container #photos .photo{
+    width: 280px;
+}
+
+main #projects .container #photos .photo .photo-area{
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+    cursor: pointer;
+}
+
+main #projects .container #photos .photo .photo-area img{
+    width: inherit;
+    height: inherit;
+    /*Usando o inherit vai herdar a propriedade do seu pai*/
+}
+
+main #projects .container #photos .photo .photo-area .photoinfo{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.43);
+    display: none; /*Inicialmente o photarea é inativo e só aparece quando passamos o mouse por cima da imagem*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    backdrop-filter: blur(2px);
+}
+
+main #projects .container #photos .photo .photo-area:hover .photoinfo{
+    display: flex;
+}
+
+#team{
+    background-image: url('imagens/bg.jpg');
+    background-position: center;
+}
+
+.opacity{
+    background-color: rgba(0, 0, 0, 0.662);
+}
+
+.opacity .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.opacity .container .nav{
+    position: relative;
+    bottom: 30px;
+}
+
+#cards-func{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.card-func{
+    padding: 50px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    flex: 1;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #AFAFAF;
+}
+
+.social:hover{
+    background-color: #B98B59;
+    cursor: pointer;
+}
+
+/*--> Config Depoiments <--*/
+#clients{
+    background-color: #F7F7F7;
+}
+
+#clients .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients .container img{
+    margin-top: 30px;
+}
+
+#clients .container h6{
+    font-weight: 600;
+    color: #515151;
+}
+
+#clients .container p{
+    width: 60%;
+    text-align: center;
+    margin-bottom: -40px;
+}
+
+#clients .container .nav{
+    padding-bottom: 60px;
+}
+
+/*--> Config empresas <--*/
+#empresas{
+    border-top: 2px solid #AFAFAF;
+    border-bottom: 2px solid #AFAFAF;
+}
+
+#empresas .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#empresas .container img{
+    margin: 50px;
+}
+
+/*--> config price <--*/
+#price{
+    background-color: #f7f7f7;
+}
+
+#tables{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/*--> config tables price <--*/
+.table{
+    background-color: white;
+    padding: 40px 15px;
+    margin: 20px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.table h4{
+    font-size: 14px;
+    color: #333;
+}
+
+.table h5{
+    margin-top: 0;
+    font-size: 30px;
+    color: #333;
+}
+
+.table h6{
+    margin-top: 0;
+    font-size: 10px;
+    color: #afafaf;
+}
+
+.table p{
+    font-size: 11px;
+    color: #333;
+}
+
+.table hr{
+    width: 5px;
+    background-color: black;
+}
+
+.table button{
+    margin-top: 20px;
+}
+
+/*--> config premium <--*/
+
+/*--> config premium conteudo <--*/
+
+#premium #conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#premium .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#premium .texto{
+    margin-left: 40px;
+}
+
+#premium .texto h2{
+    font-size: 22px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+#premium .texto p{
+    font-size: 13px;
+    color: #afafaf;
+    width: 400px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+#premium .texto ul{
+    list-style: none;
+    font-size: 13px;
+    color: #afafaf;
+}
+
+hr{
+    width: 100%;
+}
+
+#premium button{
+    position: relative;
+    top: 100px;
+}
+
+/*config facts*/
+#facts{
+    background-color: #000;
+    margin-top: 60px;
+}
+
+#facts h2{
+    color: white;
+}
+
+#facts .numero h2{
+    color:#B98B59;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+#facts h3{
+    color: #AFAFAF;
+}
+
+#facts #numeros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#facts .numero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 30px 0px 30px;
+}
+
+#facts .numero h2{
+    color: #B98B59;
+}
+
+#facts .numero h3{
+    font-size: 18px;
+    width: 200px;
+    line-height: 20px;
+    color: white;
+}
+
+#facts hr{
+    width: 15px;
+    border: 2px solid #AFAFAF;
+    margin-bottom: -5px;
+}
+
+#facts p{
+    color: #AFAFAF;
+    width: 190px;
+    text-align: center;
+    line-height: 14px;
+    margin-top: 10px;
+}
+
+/*--> config red <--*/
+#redes-sociais .container{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#redes-sociais #title img{
+    position: relative;
+    top: 7px;
+}
+
+#redes-sociais #title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#redes-sociais #title h3{
+    margin-left: 10px;
+}
+
+#redes-sociais .rede{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+#redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rede .social{
+    position: relative;
+    top: 7px;
+}
+
+/*--> config form <--*/
+#contact{
+    background-color: #F7F7F7;
+}
+
+#contact h2{
+    margin-top: -60px;
+}
+
+#contact h3{
+    margin-bottom: 35px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: auto;
+}
+
+#line1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+#line1 #name{
+    margin-left: 0;
+    width: 50%;
+}
+
+#line1 #email{
+    margin-right: 0;
+    width: 50%;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    border-bottom: 2.5px solid #afafaf;
+    background-color: #F7F7F7;
+    margin: 10px;
+    resize: none;
+}
+
+input:hover, textarea:hover{
+    border-bottom: 2.5px solid #B98B59;
+}
+
+input:focus, textarea:focus{
+    border-bottom: 2.5px solid #B98B59;
+    outline: 0;
+}
+
+textarea{
+    padding: 0;
+    margin-top: 70px;
+}
+
+form button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*--> config localização <--*/
+#localizacao{
+    background-color: #AFAFAF;
+}
+
+#encontre{
+    width: 500px;
+    background-color: #fff;
+    padding: 30px 25px;
+}
+
+#localizacao .rede{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#localizacao .rede p{
+    margin-left: 15px;
+    position: relative;
+    top: 7px;
+}
+
+/*--> config footer <--*/
+footer{
+    background-color: #000;
+}
+
+footer .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.column-1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.column-2{
+    flex: 1;
+}
+
+.column-2 p{
+    color: #afafaf;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.column-3{
+    flex: 1;
+    background-color: #333;
+    padding: 30px;
+    width: 10px;
+    margin: 30px;
+}
+
+.column-3 form{
+    width: 160px;
+}
+
+.column-3 form input{
+    text-align: center;
+    padding: 0px 20px 10px 20px;
+    background-color: #333;
+    color: #F7F7F7;
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: 55%;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    .menu-burguer{
+        display: flex;
+    }
+
+    main #about .container #conteudo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main #about .container #conteudo #texto{
+        width: 450px;
+        margin-bottom: 50px;
+    }
+
+    main #about .container #conteudo #texto .botao{
+        margin: auto;
+    }
+
+    #cards-func{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #tables{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #premium #conteudo{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    #premium #conteudo img{
+        margin-bottom: 30px;
+    }
+
+    #numeros{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 375px){
+    #banner #opacidade #slide h1{
+        font-size: 50px;
+    }
+
+    #cards{
+        flex-direction: column;
+    }
+
+    .card{
+        border: 1px solid #515151;
+        border-top: none;
+        border-bottom: none;
+    }
+
+    footer .container{
+        flex-direction: column;
+    }
+
+    footer .column-1{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    footer .column-3{
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
